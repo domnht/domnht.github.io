@@ -1,0 +1,29 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
+}
+body {
+	/*position: relative;*/
+	background: #e3f2fd;
+}
+.title {
+	font-weight: 100;
+	font-size: 5rem;
+	padding: .5rem 0 .5rem 0;
+}
+.subtitle {
+	font-family: Playfair Display;
+	font-style: italic;
+	font-size: 1.5rem;
+	color: #999;
+	padding: .5rem 0 .5rem 0;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%);
+}
