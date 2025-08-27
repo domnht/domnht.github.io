@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domacro - Tự động hóa Microsoft Word</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="clean.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <i class="fas fa-magic"></i> Domacro
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Tính năng</a></li>
+                <li><a href="#installation">Cài đặt</a></li>
+                <!--<li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#support">Hỗ trợ</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="fade-in">Domacro</h1>
+            <p class="fade-in">Add-on miễn phí giúp tự động hóa và định dạng tài liệu Microsoft Word nhanh chóng, chuyên nghiệp</p>
+            <a href="#installation" class="cta-button fade-in">
+                <i class="fas fa-download"></i>
+                Tải xuống miễn phí
+            </a>
+            <div class="hero-image fade-in" style="margin-top: 3rem; padding: 2rem; background: #f1f5f9; border-radius: 12px;">
+                <i class="fas fa-file-word" style="font-size: 4rem; color: #2563eb; margin-bottom: 1rem;"></i>
+                <!-- <p style="color: #666; margin: 0;">Hình ảnh demo sẽ được thêm vào đây<br><small>Kích thước đề xuất: 1200x800px</small></p> -->
+                <img src="hero-screenshot.jpg" alt="Screenshot" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Tính năng nổi bật</h2>
+            <p class="section-subtitle">Domacro cung cấp các công cụ mạnh mẽ để tối ưu hóa quy trình làm việc với Microsoft Word</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Tự động định dạng</h3>
+                    <p>Áp dụng chuẩn định dạng chuyên nghiệp cho toàn bộ tài liệu chỉ với một cú nhấp chuột</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Quản lý biến tài liệu</h3>
+                    <p>Tạo, chỉnh sửa, xóa và quản lý các biến trong tài liệu Word một cách dễ dàng và hiệu quả</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Chèn mẫu có sẵn</h3>
+                    <p>Thư viện các mẫu tiêu đề, khung chữ ký và template khác giúp tiết kiệm thời gian soạn thảo</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Định dạng báo giảng</h3>
+                    <p>Công cụ chuyên dụng để định dạng các văn bản giáo dục theo chuẩn chuyên nghiệp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title">Hướng dẫn cài đặt</h2>
+            <p class="section-subtitle">Cài đặt Domacro chỉ trong vài phút với hướng dẫn chi tiết dưới đây</p>
+            
+            <div class="install-tabs">
+                <button class="tab-button active" onclick="switchTab('windows')">
+                    <i class="fab fa-windows"></i> Windows
+                </button>
+                <button class="tab-button" onclick="switchTab('macos')">
+                    <i class="fab fa-apple"></i> macOS
+                </button>
+            </div>
+
+            <div class="install-content">
+                <div class="download-box">
+                    <h3 style="margin-bottom: 1rem; color: #1f2937;">
+                        <i class="fas fa-download"></i> Tải xuống Domacro
+                    </h3>
+                    <p style="margin-bottom: 1.5rem; color: #666;">Phiên bản mới nhất – Miễn phí cho Microsoft Word 2016+</p>
+                    <div class="download-links">
+                        <a href="Domacro for Word v0.2.2.zip" class="download-link">
+                            <i class="fas fa-file-archive"></i>
+                            Domacro for Word v0.2.2.zip
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Windows Installation -->
+                <div id="windows-tab" class="tab-pane active">
+                    <div class="install-steps">
+                        <div class="install-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Tải và giải nén file</h4>
+                                <p>Tải và giải nén vào thư mục bất kỳ trên máy tính của bạn.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="install-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Chạy script cài đặt</h4>
+                                <p>Chạy tệp <strong>Domacro.dotm Installer.cmd</strong> để cài đặt add-on vào thư mục khởi động của Word.</p>
+                            </div>
+                        </div>
+
+                        <div class="install-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Khởi động lại Word</h4>
+                                <p>Mở Microsoft Word, add-on Domacro sẽ tự động được tải và xuất hiện trong thanh công cụ.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="install-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Kích hoạt macro (nếu cần)</h4>
+                                <p>Nếu Word hỏi về việc kích hoạt macro, hãy chọn "Enable Content" để sử dụng đầy đủ tính năng của Domacro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- macOS Installation -->
+                <div id="macos-tab" class="tab-pane">
+                    <div class="install-steps">
+                        <div class="install-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Tải và giải nén file</h4>
+                                <p>Tải và giải nén vào thư mục bất kỳ trên máy tính của bạn.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="install-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Cấp quyền thực thi</h4>
+                                <p>Mở Terminal, điều hướng đến thư mục chứa file và chạy lệnh: <br><code>chmod u+x Domacro.dotm\ Installer.command</code></p>
+                            </div>
+                        </div> -->
+
+                        <div class="install-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Chạy script cài đặt</h4>
+                                <p>Chạy tệp <strong>Domacro.dotm Installer.command</strong> để cài đặt add-on vào thư mục khởi động của Word.</p>
+                            </div>
+                        </div>
+
+                        <div class="install-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Khởi động lại Word</h4>
+                                <p>Mở Microsoft Word, add-on Domacro sẽ tự động được tải và xuất hiện trong thanh công cụ.</p>
+                            </div>
+                        </div>
+
+                        <div class="install-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Kích hoạt macro (nếu cần)</h4>
+                                <p>Nếu Word hỏi về việc kích hoạt macro, hãy chọn "Enable Content" để sử dụng đầy đủ tính năng của Domacro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Về tác giả</h2>
+            <div class="about-content">
+                <div class="author-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 class="author-name">Nguyen Hieu Thanh</h3>
+                <p class="author-bio">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                    <a href="https://github.com/domnht" style="color: #374151; font-size: 1.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#374151'">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/domnht" style="color: #374151; font-size: 1.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#374151'">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:nguyen.hieuthanh@outlook.com" style="color: #374151; font-size: 1.5rem; transition: color 0.3s ease;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#374151'">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Hỗ trợ & Đóng góp</h2>
+            <p class="section-subtitle">Cảm ơn bạn đã sử dụng Domacro!<br>Hãy đóng góp ý kiến hoặc ủng hộ tác giả</p>
+            
+            <div class="support-options">
+                <div class="support-card">
+                    <h4><i class="fas fa-coffee"></i> Ủng hộ tác giả</h4>
+                    <p style="margin-bottom: 1.5rem; color: #666;">Domacro hoàn toàn miễn phí. Nếu bạn thấy hữu ích, hãy ủng hộ để tác giả tiếp tục phát triển!</p>
+                    <div class="donate-buttons">
+                        <a href="#" class="donate-button">
+                            <i class="fas fa-mobile-alt"></i>
+                            Momo
+                        </a>
+                        <a href="#" class="donate-button">
+                            <i class="fas fa-university"></i>
+                            Ngân hàng
+                        </a>
+                        <a href="#" class="donate-button">
+                            <i class="fas fa-coffee"></i>
+                            Buy Me a Coffee
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="support-card">
+                    <h4><i class="fas fa-comments"></i> Gửi phản hồi</h4>
+                    <p style="color: #666;">Báo lỗi, đề xuất tính năng mới hoặc chia sẻ trải nghiệm sử dụng của bạn</p>
+                </div> -->
+            </div>
+
+            <div class="feedback-form">
+                <h3 style="text-align: center; margin-bottom: 2rem; color: #1f2937;">Gửi phản hồi</h3>
+                <form onsubmit="handleFeedback(event)">
+                    <div class="form-group">
+                        <label for="name">Tên của bạn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedback">Nội dung phản hồi</label>
+                        <textarea id="feedback" name="feedback" rows="5" placeholder="Chia sẻ ý kiến, báo lỗi hoặc đề xuất tính năng mới..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi phản hồi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Domacro by DomNHT. All rights reserved. | Made with ❤️ for Microsoft Word users</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="domacro.js"></script>
+</body>
